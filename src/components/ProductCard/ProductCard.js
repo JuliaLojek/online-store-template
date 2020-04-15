@@ -1,9 +1,10 @@
 import React from 'react';
 import './ProductCard.css';
 import { Link } from 'react-router-dom';
+import AddToCartButton from '../AddToCartButton/AddToCartButton';
 
 function ProductCard(props) {
-  const { title, image, description, price } = props;
+  const { id, title, image, description, price } = props;
 
   return (
     <div className="card">
@@ -21,6 +22,7 @@ function ProductCard(props) {
           <div>
             <h4 className="cardPrice">{price}</h4>
             <p className="cardDesc">{description}</p>
+            <AddToCartButton id={id} />
           </div>
         </div>
       </div>

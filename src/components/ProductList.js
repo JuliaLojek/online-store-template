@@ -29,7 +29,8 @@ function ProductList() {
                 title={item.title}
                 image={item.image}
                 description={item.description.slice(0, 100) + "..."}
-                price={item.price}
+                price={item.price + "$"}
+                id={item.id}
               />
             )
           })}
